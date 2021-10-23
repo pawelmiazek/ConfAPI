@@ -1,14 +1,8 @@
-from django.urls import include, path
-from rest_framework import routers
+from django.urls import path
 
 from .views import ConfiguratorView
 
 
-router = routers.DefaultRouter()
-
-router.register("configurator", ConfiguratorView, basename="configurator")
-
-
 urlpatterns = [
-    path("", include(router.urls)),
+    path("configurator/", ConfiguratorView.as_view()),
 ]

@@ -6,7 +6,6 @@ urlpatterns = [path("", include("api.urls"))]
 
 if settings.DEBUG:
     from rest_framework import permissions
-    from rest_framework.authentication import BasicAuthentication
 
     from drf_yasg import openapi
     from drf_yasg.views import get_schema_view
@@ -17,8 +16,7 @@ if settings.DEBUG:
             default_version="v1",
             description="Backend communication API",
         ),
-        authentication_classes=(BasicAuthentication,),
-        permission_classes=(permissions.IsAuthenticated,),
+        permission_classes=(permissions.AllowAny,),
     )
 
     urlpatterns += [
