@@ -4,10 +4,6 @@
 #
 #    pip-compile --generate-hashes
 #
-appnope==0.1.2 \
-    --hash=sha256:93aa393e9d6c54c5cd570ccadd8edad61ea0c4b9ea7a01409020c9aa019eb442 \
-    --hash=sha256:dd83cd4b5b460958838f6eb3000c660b1f9caf2a5b1de4264e941512f603258a
-    # via ipython
 asgiref==3.4.1 \
     --hash=sha256:4ef1ab46b484e3c706329cedeff284a5d40824200638503f5768edb6de7d58e9 \
     --hash=sha256:ffc141aa908e6f175673e7b1b3b7af4fdb0ecb738fc5c8b88f69f055c2415214
@@ -280,6 +276,9 @@ mypy-extensions==0.4.3 \
     # via
     #   black
     #   mypy
+nested-lookup==0.2.22 \
+    --hash=sha256:e39adacd11e879dd6383b0a832cde97edce25d2a29cbc03a9c80fefa3a131e8b
+    # via -r requirements.in
 packaging==21.0 \
     --hash=sha256:7dc96269f53a4ccec5c0670940a4281106dd0bb343f47b7471f779df49c2fbe7 \
     --hash=sha256:c86254f9220d55e31cc94d69bade760f0847da8000def4dfe1c6b872fd14ff14
@@ -473,6 +472,7 @@ six==1.16.0 \
     # via
     #   flake8-debugger
     #   flake8-print
+    #   nested-lookup
 sqlparse==0.4.2 \
     --hash=sha256:0c00730c74263a94e5a9919ade150dfc3b19c574389985446148402998287dae \
     --hash=sha256:48719e356bb8b42991bdbb1e8b83223757b93789c00910a616a071910ca4a64d
