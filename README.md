@@ -28,3 +28,7 @@ The reason of chosen technology is that they have good community support and off
 1. Endpoint for generating configurator json files: `/v1/configurator/`.
 
 2. API Schema: `/v1/docs/`.
+
+## Tests
+
+1. Write `make test` to run unit tests.
